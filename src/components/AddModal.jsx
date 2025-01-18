@@ -30,6 +30,7 @@ function AddModal({ showModal, handleClose, drName }) {
               <Form.Control
                 type="datetime-local"
                 onChange={(e) => setDate(e.target.value)}
+                value={date}
               />
             </Form.Group>
           </Form>
