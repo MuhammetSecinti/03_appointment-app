@@ -1,8 +1,8 @@
-import "./App.css"
-import Home from "./pages/Home"
+import "./App.css";
+import Home from "./pages/Home";
 
-const App = () => {
-  return <Home />
+function App() {
+  return <Home />;
 }
 
-export default App
+export default App;

@@ -1,43 +1,43 @@
-import Container from "react-bootstrap/Container";
+import { Card, Col, Container, Row } from "react-bootstrap/";
 import { doctorData } from "../helper/data";
-import { Col, Image, Row } from "react-bootstrap";
-
 import AddModal from "./AddModal";
 import { useState } from "react";
 
-const Doctors = () => {
-  const [showModal, setShow] = useState(false);
+const Doctors = ({ appointment, setAppointment }) => {
+  const [show, setShow] = useState(false);
+
   const [drName, setDrName] = useState("");
 
-  const handleClose = () => setShow(false);
-
-  
   return (
     <Container className="p-2">
-      <h3 className="display-6 mb-3" style={{ color: "rgb(166, 18, 189)" }}>
-        Our Doctors
+      <h3 className="display-6 mb-3" style={{ color: "red" }}>
+        Our Doctor
       </h3>
       <Row>
-        {doctorData.map((doctor) => (
-          <Col xs={6} sm={4} lg={3} key={doctor.id}>
-            <Image
+        {doctorData.map(({ name, dep, img, id }) => (
+          <Col className="m-6" xs={6} sm={4} lg={3} key={id}>
+            <Card.Img
               onClick={() => {
                 setShow(true);
-                setDrName(doctor.name);
+                setDrName(name);
               }}
-              className="img-thumbnail doctor-img"
-              src={doctor.img}
-              alt={doctor.name}
+              className="img-thumnail doctor-img w-50"
+              variant="top"
+              src={img}
             />
-            <h5>{doctor.name}</h5>
-            <p>{doctor.dep}</p>
+            <Card.Body>
+              <Card.Title>{name}</Card.Title>
+              <Card.Text>{dep}</Card.Text>
+            </Card.Body>
           </Col>
         ))}
       </Row>
       <AddModal
-        showModal={showModal}
-        handleClose={handleClose}
+        show={show}
+        setShow={setShow}
         drName={drName}
+        appointment={appointment}
+        setAppointment={setAppointment}
       />
     </Container>
   );

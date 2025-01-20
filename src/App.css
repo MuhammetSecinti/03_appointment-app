@@ -1,9 +1,12 @@
 /*? Global Stlye for App */
+.main{
+  background-image: url(../public/img/istockphoto-1129548256-2048x2048.jpg);
+}
 
 .doctor-img {
   transition: transform 0.5s;
   border-radius: 1rem;
-  max-height: 130px;
+  max-height: 180px;
 }
 .doctor-img:hover {
   transform: scale(1.05);

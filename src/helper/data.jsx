@@ -32,26 +32,26 @@ export const doctorData = [
   {
     id: 2,
     name: "Dr. Jasmine Carpanter",
-    dep: "Radiolgy",
+    dep: "Radiology",
     img: "./img/dr2.jpg",
   },
   {
     id: 3,
     name: "Dr. Arianna Mary",
-    dep: "Orthopedy",
+    dep: "Orthopedics",
     img: "./img/dr3.jpg",
   },
   {
     id: 4,
     name: "Dr. Jessica White",
-    dep: "Gastroentogoly",
+    dep: "Gastroenterology",
     img: "./img/dr4.jpg",
   },
   {
     id: 5,
-    name: "Harry Coming",
+    name: "Abraham Carpanter",
     dep: "Surgery",
-    img: "./img/dr9.jpg",
+    img: "./img/dr5.jpg",
   },
   {
     id: 6,
