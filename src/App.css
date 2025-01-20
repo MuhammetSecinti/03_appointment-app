@@ -1,6 +1,18 @@
 /*? Global Stlye for App */
 .main{
+  
+
+}
+body {
+  margin: 0;
+  height: 100%; /* Ekran yüksekliği */
+  width: 100%;
   background-image: url(../public/img/istockphoto-1129548256-2048x2048.jpg);
+  background-size: cover; /* Görseli ekranın tamamını kaplayacak şekilde ölçekler */
+  background-position: center; /* Görselin ortalanmasını sağlar */
+  background-repeat: no-repeat; /* Görselin tekrar etmesini 
+  engeller */
+  background-attachment: fixed; 
 }
 
 .doctor-img {
