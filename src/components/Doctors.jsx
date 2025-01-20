@@ -21,7 +21,7 @@ const Doctors = ({ appointment, setAppointment }) => {
                 setShow(true);
                 setDrName(name);
               }}
-              className="img-thumnail doctor-img w-50"
+              className="img-thumnail doctor-img "
               variant="top"
               src={img}
             />

@@ -6,7 +6,9 @@
 .doctor-img {
   transition: transform 0.5s;
   border-radius: 1rem;
-  max-height: 180px;
+  max-height: 120px;
+  width: 120px;
+  border: 2px solid black;
 }
 .doctor-img:hover {
   transform: scale(1.05);
